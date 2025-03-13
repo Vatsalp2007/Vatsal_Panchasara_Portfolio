@@ -1,0 +1,531 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+:root {
+    --text-color--: rgba(255, 255, 255, 0.849);
+}
+
+
+html {
+    font-size: 1.5vw;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.bar {
+    margin-top: 20px;
+    display: flex;
+    animation: navbar 2s linear;
+}
+
+@keyframes navbar {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+nav {
+    height: 50px;
+    width: max-content;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    border-radius: 10px;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.24);
+    backdrop-filter: blur(20px);
+    transition: all 0.5s;
+}
+nav:hover{
+    transform: scale(1.2)
+}
+
+i {
+    margin-right: 5px;
+    margin-left: 20px;
+    color: aliceblue;
+}
+i:hover{
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-color--);
+}
+
+.btn-projects {
+    height: 50px;
+    width: max-content;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-right: 2%;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.24);
+    backdrop-filter: blur(20px);
+    font-size: 1rem;
+    border: 0;
+    color: var(--text-color--);
+    transition: all 0.5s;
+}
+
+.btn-projects:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/* --------------------------------section Home---------------------------- */
+
+
+.home {
+    height: auto;
+    width: 100%;
+    margin-top: 50px;
+    padding-bottom: 200px;
+}
+
+.main{
+    height: max-content;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    grid-template-rows: 10fr;
+    grid-gap: 50px;
+    margin-top: 10%;
+}
+
+.main .photo {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.main .details {
+    padding: 10px;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    animation: text-details 1.7s;
+}
+
+@keyframes text-details {
+    0% {
+        padding: 5%;
+    }
+
+    100% {
+        padding: 10px;
+    }
+}
+
+.main img {
+    display: flex;
+    border-radius: 10px;
+    margin-left: 5%;
+    margin-top: 7%;
+    margin: 2% 10%;
+}
+
+/* --------------------------------home page detailes------------------- */
+
+.text1 {
+    color: var(--text-color--);
+    font-size: 1.8rem;
+}
+
+.text2 {
+    color: var(--text-color--);
+    font-size: 1.2rem;
+}
+
+.btn-2 {
+    height: max-content;
+    width: max-content;
+    padding: 5px;
+    margin: 20px;
+    background: rgba(255, 255, 255, 0.24);
+    backdrop-filter: blur(20px);
+    font-size: 1.2rem;
+    border-radius: 7px;
+    color: var(--text-color--);
+    border: 2px solid var(--text-color--);
+    transition: all 0.5s;
+}
+.btn-2:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/* -----------------------------------projects section------------------------- */
+#projects {
+    display: block;
+    height: max-content;
+    width: 100%;
+    padding: 30px;
+    margin-top: 10%;
+}
+
+.p_main {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 5fr 5fr;
+    grid-template-rows: 3fr 3fr 3fr 3fr;
+    grid-gap: 10px;
+}
+
+.p_1{
+    height: 100%;
+    width: 100%;
+    border-radius: 7px;
+    transition: all 0.5s;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    border: 2px solid #fff;
+    position: relative;
+}
+.p_1:hover{
+    transform: scale(0.96);
+}
+
+
+.p_2 {
+    height: 100%;
+    width: 100%;
+    border-radius: 7px;
+    transition: all 0.5s;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    border: 2px solid #fff;
+    position: relative;
+}
+.p_2:hover{
+    transform: scale(0.96);
+}
+
+.p_3 {
+    height: 100%;
+    width: 100%;
+    border-radius: 7px;
+    transition: all 0.5s;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    border: 2px solid #fff;
+    position: relative;
+}
+.p_3:hover{
+    transform: scale(0.96);
+}
+
+.p_4 {
+    height: 100%;
+    width: 100%;
+    border-radius: 7px;
+    transition: all 0.5s;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    border: 2px solid #fff;
+    position: relative;
+}
+.p_4:hover{
+    transform: scale(0.96);
+}
+
+.p_5 {
+    height: 100%;
+    width: 100%;
+    border-radius: 7px;
+    transition: all 0.5s;
+    grid-column: 1/2;
+    grid-row: 3/4;
+    border: 2px solid #fff;
+    position: relative;
+}
+.p_5:hover{
+    transform: scale(0.96);
+}
+
+.p_6 {
+    height: 100%;
+    width: 100%;
+    border-radius: 7px;
+    transition: all 0.5s;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    border: 2px solid #fff;
+    position: relative;
+}
+.p_6:hover{
+    transform: scale(0.96);
+}
+
+.p-label{
+    background: rgba(255, 255, 255, 0.24);
+    backdrop-filter: blur(20px);
+    margin-bottom: 5%;
+    border-radius: 7px;
+    color: var(--text-color--);
+
+}
+
+
+
+/* -----------------------------------Contact section------------------------- */
+#Contact {
+    height: 100vh;
+    width: 100%;
+    background-color: yellow;
+}
+
+/* ---------------------------Mobile Mod----------------------- */
+
+@media(max-width:900px) {
+
+    html {
+        font-size: 2vw;
+    }
+
+    .bar {
+        margin-top: 1%;
+        display: flex;
+    }
+
+    nav {
+        height: 50px;
+        width: 80%;
+        margin: 10%;
+        padding: 10px;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+        border-radius: 10px;
+        font-size: 2.5rem;
+        background: rgba(255, 255, 255, 0.24);
+        backdrop-filter: blur(20px);
+        transition: all 0.5s;
+    }
+    nav:hover{
+        transform: scale(1.2)
+    }
+
+    i {
+        margin-right: 5px;
+        margin-left: 20px;
+        color: aliceblue;
+    }
+    i:hover{
+        cursor: pointer;
+    }
+
+    nav span {
+        display: none;
+    }
+
+    .btn-projects {
+        /* height: 50px;
+        width: max-content;
+        padding-left: 1%;
+        padding-right: 1%;
+        margin-right: 2%;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.24);
+        backdrop-filter: blur(20px);
+        font-size: 1rem;
+        border: 0;
+        color: var(--text-color--);
+        transition: all 0.5s;
+    
+        &:hover{
+            transform: scale(1.2);
+            cursor: pointer;
+        } */
+
+        display: none;
+    }
+
+
+    /* --------------------------------section Home---------------------------- */
+
+
+    .home {
+        height: 100vh;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .main {
+        display: grid;
+        grid-template-columns: 5fr;
+        grid-template-rows: 5fr 5fr;
+        grid-gap: 20px;
+    }
+
+    .main .photo {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .main .details {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        padding-left: 6%;
+        animation: none;
+    }
+
+    .main img {
+        display: flex;
+        border-radius: 10px;
+        margin-left: 5%;
+        margin: 2% 10%;
+    }
+
+    /* --------------------------------home page detailes------------------- */
+
+    .text1 {
+        color: var(--text-color--);
+        font-size: 3.5rem;
+    }
+
+    .text2 {
+        color: var(--text-color--);
+        font-size: 2.5rem;
+    }
+
+    .btn-2 {
+        height: max-content;
+        width: max-content;
+        padding: 5px;
+        margin: 20px;
+        background: rgba(255, 255, 255, 0.24);
+        backdrop-filter: blur(20px);
+        font-size: 2.4rem;
+        border-radius: 7px;
+        color: aliceblue;
+        border: 2px solid aliceblue;
+        transition: all 0.5s;
+    }
+    .btn-2{
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+
+    /* -----------------------------------projects section------------------------- */
+    #projects {
+        height: 100vh;
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .p_main {
+        height: 100vh;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 5fr;
+        grid-template-rows: 3fr 3fr 3fr 3fr 3fr 3fr 3fr;
+        grid-gap: 10px;
+    }
+
+    .p_1 {
+        height: 100%;
+        width: 100%;
+        border-radius: 7px;
+        transition: all 0.5s;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        border: 2px solid #fff;
+    }
+    .p_1:hover{
+        transform: scale(0.96);
+    }
+
+    .p_2 {
+        height: 100%;
+        width: 100%;
+        border-radius: 7px;
+        transition: all 0.5s;
+        grid-column: 1/2;
+        grid-row: 2/3;
+        border: 2px solid #fff;
+    }
+    .p_2:hover{
+        transform: scale(0.96);
+    }
+
+    .p_3 {
+        height: 100%;
+        width: 100%;
+        border-radius: 7px;
+        transition: all 0.5s;
+        grid-column: 1/2;
+        grid-row: 3/4;
+        border: 2px solid #fff;
+    }
+    .p_3:hover{
+        transform: scale(0.96);
+    }
+
+    .p_4 {
+        height: 100%;
+        width: 100%;
+        border-radius: 7px;
+        transition: all 0.5s;
+        grid-column: 1/2;
+        grid-row: 4/5;
+        border: 2px solid #fff;
+    }
+    .p_4:hover{
+        transform: scale(0.96);
+    }
+
+    .p_5 {
+        height: 100%;
+        width: 100%;
+        border-radius: 7px;
+        transition: all 0.5s;
+        grid-column: 1/2;
+        grid-row: 5/6;
+        border: 2px solid #fff;
+    }
+    .p_5:hover{
+        transform: scale(0.96);
+    }
+
+    .p_6 {
+        height: 100%;
+        width: 100%;
+        border-radius: 7px;
+        transition: all 0.5s;
+        grid-column: 1/2;
+        grid-row: 6/7;
+        border: 2px solid #fff;
+
+    }
+    .p_6:hover{
+        transform: scale(0.96);
+    }
+
+    .p-label{
+        background: rgba(255, 255, 255, 0.24);
+        backdrop-filter: blur(20px);
+        margin-bottom: 5%;
+        border-radius: 7px;
+        color: var(--text-color--);
+        font-size: 3rem;
+    
+    }
+
+}
